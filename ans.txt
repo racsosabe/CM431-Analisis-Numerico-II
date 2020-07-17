@@ -1,0 +1,1 @@
+Para ver el desarrollo del test, entrar al siguiente enlace: https://nbviewer.jupyter.org/github/racsosabe/CM431-Analisis-Numerico-II/blob/master/Tests/Test%207.ipynb
