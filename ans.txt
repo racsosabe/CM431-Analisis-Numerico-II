@@ -1,1 +1,1 @@
-ara ver el desarrollo del test, entrar al siguiente enlace: https://nbviewer.jupyter.org/github/racsosabe/CM431-Analisis-Numerico-II/blob/master/Tests/Test%208.ipynb
+Para ver el desarrollo del examen, entrar al siguiente enlace: https://nbviewer.jupyter.org/github/racsosabe/CM431-Analisis-Numerico-II/blob/master/Calificadas/Examen%20Parcial.ipynb
