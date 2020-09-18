@@ -1,0 +1,381 @@
+GNU gdb (Ubuntu 8.1-0ubuntu3.2) 8.1.0.20180409-git
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+Para las instrucciones de informe de errores, vea:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+[Nuevo LWP 11045]
+[Nuevo LWP 11046]
+[Nuevo LWP 11047]
+[Nuevo LWP 11048]
+[Nuevo LWP 11049]
+[Nuevo LWP 11050]
+[Nuevo LWP 11051]
+[Nuevo LWP 11060]
+[Nuevo LWP 11346]
+[Nuevo LWP 11348]
+[Nuevo LWP 11349]
+[Depuración de hilo usando libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f47b06ec722 in __GI___waitpid (pid=11368, stat_loc=0x0, options=0)
+    at ../sysdeps/unix/sysv/linux/waitpid.c:30
+
+Stack backtrace
+---------------
+    at ../sysdeps/unix/sysv/linux/waitpid.c:30
+        resultvar = 18446744073709551104
+        sc_cancel_oldtype = 0
+        sc_ret = <optimized out>
+#1  0x00007f47a47bd9e3 in ?? ()
+   from /usr/lib/python2.7/dist-packages/cysignals/signals.x86_64-linux-gnu.so
+No symbol table info available.
+#2  0x00007f47a47bdada in ?? ()
+   from /usr/lib/python2.7/dist-packages/cysignals/signals.x86_64-linux-gnu.so
+No symbol table info available.
+#3  0x00007f47a47bff27 in ?? ()
+   from /usr/lib/python2.7/dist-packages/cysignals/signals.x86_64-linux-gnu.so
+No symbol table info available.
+#4  <signal handler called>
+No locales.
+#5  0x00007f46e4055c61 in GiNaC::numeric::print_numeric(GiNaC::print_context const&, char const*, char const*, char const*, char const*, unsigned int, bool) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#6  0x00007f46e4055cd8 in GiNaC::numeric::do_print(GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#7  0x00007f46e3f9d864 in GiNaC::basic::print_dispatch(GiNaC::class_info<GiNaC::registered_class_options> const&, GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#8  0x00007f46e403bc39 in GiNaC::mul::print_overall_coeff(GiNaC::ex, GiNaC::print_context const&, char const*, bool) const ()
+   from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#9  0x00007f46e4040232 in GiNaC::mul::do_print_rat_func(GiNaC::print_context const&, unsigned int, bool) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#10 0x00007f46e3f9d864 in GiNaC::basic::print_dispatch(GiNaC::class_info<GiNaC::registered_class_options> const&, GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#11 0x00007f46e3f9fd2b in GiNaC::container<std::vector>::printseq(GiNaC::print_context const&, char const*, char, char const*, unsigned int, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#12 0x00007f46e3fb72c5 in GiNaC::function::print(GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#13 0x00007f46e403c51b in GiNaC::mul::print_exvector(std::vector<GiNaC::ex, std::allocator<GiNaC::ex> > const&, GiNaC::print_context const&, char const*) const
+    () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#14 0x00007f46e4040260 in GiNaC::mul::do_print_rat_func(GiNaC::print_context const&, unsigned int, bool) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#15 0x00007f46e3f9d864 in GiNaC::basic::print_dispatch(GiNaC::class_info<GiNaC::registered_class_options> const&, GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#16 0x00007f46e3f8cafd in GiNaC::add::print_add(GiNaC::print_context const&, unsigned int, bool) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#17 0x00007f46e3f9d864 in GiNaC::basic::print_dispatch(GiNaC::class_info<GiNaC::registered_class_options> const&, GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#18 0x00007f46e3f9fd2b in GiNaC::container<std::vector>::printseq(GiNaC::print_context const&, char const*, char, char const*, unsigned int, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#19 0x00007f46e3fb72c5 in GiNaC::function::print(GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#20 0x00007f46e403c51b in GiNaC::mul::print_exvector(std::vector<GiNaC::ex, std::allocator<GiNaC::ex> > const&, GiNaC::print_context const&, char const*) const
+    () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#21 0x00007f46e4040260 in GiNaC::mul::do_print_rat_func(GiNaC::print_context const&, unsigned int, bool) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#22 0x00007f46e3f9d864 in GiNaC::basic::print_dispatch(GiNaC::class_info<GiNaC::registered_class_options> const&, GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#23 0x00007f46e3f8cafd in GiNaC::add::print_add(GiNaC::print_context const&, unsigned int, bool) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#24 0x00007f46e3f9d864 in GiNaC::basic::print_dispatch(GiNaC::class_info<GiNaC::registered_class_options> const&, GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#25 0x00007f46e3f9fd2b in GiNaC::container<std::vector>::printseq(GiNaC::print_context const&, char const*, char, char const*, unsigned int, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#26 0x00007f46e3fb72c5 in GiNaC::function::print(GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#27 0x00007f46e403c51b in GiNaC::mul::print_exvector(std::vector<GiNaC::ex, std::allocator<GiNaC::ex> > const&, GiNaC::print_context const&, char const*) const
+    () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#28 0x00007f46e4040260 in GiNaC::mul::do_print_rat_func(GiNaC::print_context const&, unsigned int, bool) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#29 0x00007f46e3f9d864 in GiNaC::basic::print_dispatch(GiNaC::class_info<GiNaC::registered_class_options> const&, GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#30 0x00007f46e3f8cafd in GiNaC::add::print_add(GiNaC::print_context const&, unsigned int, bool) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#31 0x00007f46e3f9d864 in GiNaC::basic::print_dispatch(GiNaC::class_info<GiNaC::registered_class_options> const&, GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#32 0x00007f46e3f9fd2b in GiNaC::container<std::vector>::printseq(GiNaC::print_context const&, char const*, char, char const*, unsigned int, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#33 0x00007f46e3fb72c5 in GiNaC::function::print(GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#34 0x00007f46e403c51b in GiNaC::mul::print_exvector(std::vector<GiNaC::ex, std::allocator<GiNaC::ex> > const&, GiNaC::print_context const&, char const*) const
+    () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#35 0x00007f46e4040260 in GiNaC::mul::do_print_rat_func(GiNaC::print_context const&, unsigned int, bool) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#36 0x00007f46e3f9d864 in GiNaC::basic::print_dispatch(GiNaC::class_info<GiNaC::registered_class_options> const&, GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#37 0x00007f46e3f8cafd in GiNaC::add::print_add(GiNaC::print_context const&, unsigned int, bool) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#38 0x00007f46e3f9d864 in GiNaC::basic::print_dispatch(GiNaC::class_info<GiNaC::registered_class_options> const&, GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#39 0x00007f46e3f9fd2b in GiNaC::container<std::vector>::printseq(GiNaC::print_context const&, char const*, char, char const*, unsigned int, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#40 0x00007f46e3fb72c5 in GiNaC::function::print(GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#41 0x00007f46e403c51b in GiNaC::mul::print_exvector(std::vector<GiNaC::ex, std::allocator<GiNaC::ex> > const&, GiNaC::print_context const&, char const*) const
+    () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#42 0x00007f46e4040260 in GiNaC::mul::do_print_rat_func(GiNaC::print_context const&, unsigned int, bool) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#43 0x00007f46e3f9d864 in GiNaC::basic::print_dispatch(GiNaC::class_info<GiNaC::registered_class_options> const&, GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#44 0x00007f46e3f8cafd in GiNaC::add::print_add(GiNaC::print_context const&, unsigned int, bool) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#45 0x00007f46e3f9d864 in GiNaC::basic::print_dispatch(GiNaC::class_info<GiNaC::registered_class_options> const&, GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#46 0x00007f46e3f9fd2b in GiNaC::container<std::vector>::printseq(GiNaC::print_context const&, char const*, char, char const*, unsigned int, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#47 0x00007f46e3fb72c5 in GiNaC::function::print(GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#48 0x00007f46e403c51b in GiNaC::mul::print_exvector(std::vector<GiNaC::ex, std::allocator<GiNaC::ex> > const&, GiNaC::print_context const&, char const*) const
+    () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#49 0x00007f46e4040260 in GiNaC::mul::do_print_rat_func(GiNaC::print_context const&, unsigned int, bool) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#50 0x00007f46e3f9d864 in GiNaC::basic::print_dispatch(GiNaC::class_info<GiNaC::registered_class_options> const&, GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#51 0x00007f46e3f8cafd in GiNaC::add::print_add(GiNaC::print_context const&, unsigned int, bool) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#52 0x00007f46e3f9d864 in GiNaC::basic::print_dispatch(GiNaC::class_info<GiNaC::registered_class_options> const&, GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#53 0x00007f46e3f9fd2b in GiNaC::container<std::vector>::printseq(GiNaC::print_context const&, char const*, char, char const*, unsigned int, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#54 0x00007f46e3fb72c5 in GiNaC::function::print(GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#55 0x00007f46e403c51b in GiNaC::mul::print_exvector(std::vector<GiNaC::ex, std::allocator<GiNaC::ex> > const&, GiNaC::print_context const&, char const*) const
+    () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#56 0x00007f46e4040260 in GiNaC::mul::do_print_rat_func(GiNaC::print_context const&, unsigned int, bool) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#57 0x00007f46e3f9d864 in GiNaC::basic::print_dispatch(GiNaC::class_info<GiNaC::registered_class_options> const&, GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#58 0x00007f46e3f8cafd in GiNaC::add::print_add(GiNaC::print_context const&, unsigned int, bool) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#59 0x00007f46e3f9d864 in GiNaC::basic::print_dispatch(GiNaC::class_info<GiNaC::registered_class_options> const&, GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#60 0x00007f46e3f9fd2b in GiNaC::container<std::vector>::printseq(GiNaC::print_context const&, char const*, char, char const*, unsigned int, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#61 0x00007f46e3fb72c5 in GiNaC::function::print(GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#62 0x00007f46e403c51b in GiNaC::mul::print_exvector(std::vector<GiNaC::ex, std::allocator<GiNaC::ex> > const&, GiNaC::print_context const&, char const*) const
+    () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#63 0x00007f46e4040260 in GiNaC::mul::do_print_rat_func(GiNaC::print_context const&, unsigned int, bool) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#64 0x00007f46e3f9d864 in GiNaC::basic::print_dispatch(GiNaC::class_info<GiNaC::registered_class_options> const&, GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#65 0x00007f46e3f8cafd in GiNaC::add::print_add(GiNaC::print_context const&, unsigned int, bool) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#66 0x00007f46e3f9d864 in GiNaC::basic::print_dispatch(GiNaC::class_info<GiNaC::registered_class_options> const&, GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#67 0x00007f46e3f9fd2b in GiNaC::container<std::vector>::printseq(GiNaC::print_context const&, char const*, char, char const*, unsigned int, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#68 0x00007f46e3fb72c5 in GiNaC::function::print(GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#69 0x00007f46e403c51b in GiNaC::mul::print_exvector(std::vector<GiNaC::ex, std::allocator<GiNaC::ex> > const&, GiNaC::print_context const&, char const*) const
+    () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#70 0x00007f46e4040260 in GiNaC::mul::do_print_rat_func(GiNaC::print_context const&, unsigned int, bool) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#71 0x00007f46e3f9d864 in GiNaC::basic::print_dispatch(GiNaC::class_info<GiNaC::registered_class_options> const&, GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#72 0x00007f46e3f8cafd in GiNaC::add::print_add(GiNaC::print_context const&, unsigned int, bool) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#73 0x00007f46e3f9d864 in GiNaC::basic::print_dispatch(GiNaC::class_info<GiNaC::registered_class_options> const&, GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#74 0x00007f46e3f9fd2b in GiNaC::container<std::vector>::printseq(GiNaC::print_context const&, char const*, char, char const*, unsigned int, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#75 0x00007f46e3fb72c5 in GiNaC::function::print(GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#76 0x00007f46e403c51b in GiNaC::mul::print_exvector(std::vector<GiNaC::ex, std::allocator<GiNaC::ex> > const&, GiNaC::print_context const&, char const*) const
+    () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#77 0x00007f46e4040260 in GiNaC::mul::do_print_rat_func(GiNaC::print_context const&, unsigned int, bool) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#78 0x00007f46e3f9d864 in GiNaC::basic::print_dispatch(GiNaC::class_info<GiNaC::registered_class_options> const&, GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#79 0x00007f46e3f8cafd in GiNaC::add::print_add(GiNaC::print_context const&, unsigned int, bool) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#80 0x00007f46e3f9d864 in GiNaC::basic::print_dispatch(GiNaC::class_info<GiNaC::registered_class_options> const&, GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#81 0x00007f46e3f9fd2b in GiNaC::container<std::vector>::printseq(GiNaC::print_context const&, char const*, char, char const*, unsigned int, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#82 0x00007f46e3fb72c5 in GiNaC::function::print(GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#83 0x00007f46e403c51b in GiNaC::mul::print_exvector(std::vector<GiNaC::ex, std::allocator<GiNaC::ex> > const&, GiNaC::print_context const&, char const*) const
+    () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#84 0x00007f46e4040260 in GiNaC::mul::do_print_rat_func(GiNaC::print_context const&, unsigned int, bool) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#85 0x00007f46e3f9d864 in GiNaC::basic::print_dispatch(GiNaC::class_info<GiNaC::registered_class_options> const&, GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#86 0x00007f46e3f8cafd in GiNaC::add::print_add(GiNaC::print_context const&, unsigned int, bool) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#87 0x00007f46e3f9d864 in GiNaC::basic::print_dispatch(GiNaC::class_info<GiNaC::registered_class_options> const&, GiNaC::print_context const&, unsigned int) const () from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#88 0x00007f46e4065059 in GiNaC::operator<<(std::ostream&, GiNaC::ex const&) ()
+   from /usr/lib/x86_64-linux-gnu/libpynac.so.15
+No symbol table info available.
+#89 0x00007f46e300e970 in ?? ()
+   from /usr/lib/python2.7/dist-packages/sage/symbolic/ring.x86_64-linux-gnu.so
+No symbol table info available.
+#90 0x00007f46e300ecd4 in ?? ()
+   from /usr/lib/python2.7/dist-packages/sage/symbolic/ring.x86_64-linux-gnu.so
+No symbol table info available.
+#91 0x00007f46e366bd90 in ?? ()
+   from /usr/lib/python2.7/dist-packages/sage/symbolic/expression.x86_64-linux-gnu.so
+No symbol table info available.
+#92 0x00007f47a4aa3c52 in ?? ()
+   from /usr/lib/python2.7/dist-packages/sage/structure/sage_object.x86_64-linux-gnu.so
+No symbol table info available.
+#93 0x00007f47a4abbb08 in ?? ()
+   from /usr/lib/python2.7/dist-packages/sage/structure/sage_object.x86_64-linux-gnu.so
+No symbol table info available.
+#94 0x000055be54c19210 in PyObject_Repr ()
+No symbol table info available.
+#95 0x000055be54c42dd8 in ?? ()
+No symbol table info available.
+#96 0x000055be54c1b0c7 in PyObject_Str ()
+No symbol table info available.
+#97 0x000055be54c19c2e in PyFile_WriteObject ()
+No symbol table info available.
+#98 0x000055be54bcf89e in PyEval_EvalFrameEx ()
+No symbol table info available.
+#99 0x000055be54bc986a in PyEval_EvalCodeEx ()
+No symbol table info available.
+#100 0x000055be54bcefc1 in PyEval_EvalFrameEx ()
+No symbol table info available.
+#101 0x000055be54bc986a in PyEval_EvalCodeEx ()
+No symbol table info available.
+#102 0x000055be54bd13ee in PyEval_EvalFrameEx ()
+No symbol table info available.
+#103 0x000055be54bc986a in PyEval_EvalCodeEx ()
+No symbol table info available.
+#104 0x000055be54bd13ee in PyEval_EvalFrameEx ()
+No symbol table info available.
+#105 0x000055be54bc986a in PyEval_EvalCodeEx ()
+No symbol table info available.
+#106 0x000055be54be57dc in ?? ()
+No symbol table info available.
+#107 0x000055be54bb533e in PyObject_Call ()
+No symbol table info available.
+#108 0x000055be54bce40f in PyEval_EvalFrameEx ()
+No symbol table info available.
+#109 0x000055be54bc986a in PyEval_EvalCodeEx ()
+No symbol table info available.
+#110 0x000055be54bd1a3c in PyEval_EvalFrameEx ()
+No symbol table info available.
+#111 0x000055be54bc986a in PyEval_EvalCodeEx ()
+No symbol table info available.
+#112 0x000055be54bd13ee in PyEval_EvalFrameEx ()
+No symbol table info available.
+#113 0x000055be54bc986a in PyEval_EvalCodeEx ()
+No symbol table info available.
+#114 0x000055be54bd1a3c in PyEval_EvalFrameEx ()
+No symbol table info available.
+#115 0x000055be54bc986a in PyEval_EvalCodeEx ()
+No symbol table info available.
+#116 0x000055be54bd1a3c in PyEval_EvalFrameEx ()
+No symbol table info available.
+#117 0x000055be54bc986a in PyEval_EvalCodeEx ()
+No symbol table info available.
+#118 0x000055be54be57dc in ?? ()
+No symbol table info available.
+#119 0x000055be54bb533e in PyObject_Call ()
+No symbol table info available.
+#120 0x000055be54bce40f in PyEval_EvalFrameEx ()
+No symbol table info available.
+#121 0x000055be54bc986a in PyEval_EvalCodeEx ()
+No symbol table info available.
+#122 0x000055be54be57dc in ?? ()
+No symbol table info available.
+#123 0x000055be54bb533e in PyObject_Call ()
+No symbol table info available.
+#124 0x000055be54bce40f in PyEval_EvalFrameEx ()
+No symbol table info available.
+#125 0x000055be54bc986a in PyEval_EvalCodeEx ()
+No symbol table info available.
+#126 0x000055be54bd1a3c in PyEval_EvalFrameEx ()
+No symbol table info available.
+#127 0x000055be54bc986a in PyEval_EvalCodeEx ()
+No symbol table info available.
+#128 0x000055be54bd1a3c in PyEval_EvalFrameEx ()
+No symbol table info available.
+#129 0x000055be54bc986a in PyEval_EvalCodeEx ()
+No symbol table info available.
+#130 0x000055be54be57dc in ?? ()
+No symbol table info available.
+#131 0x000055be54bb533e in PyObject_Call ()
+No symbol table info available.
+#132 0x000055be54bce40f in PyEval_EvalFrameEx ()
+No symbol table info available.
+#133 0x000055be54bc986a in PyEval_EvalCodeEx ()
+No symbol table info available.
+#134 0x000055be54bd1a3c in PyEval_EvalFrameEx ()
+No symbol table info available.
+#135 0x000055be54bc986a in PyEval_EvalCodeEx ()
+No symbol table info available.
+#136 0x000055be54bd1a3c in PyEval_EvalFrameEx ()
+No symbol table info available.
+#137 0x000055be54bc986a in PyEval_EvalCodeEx ()
+No symbol table info available.
+#138 0x000055be54bd1a3c in PyEval_EvalFrameEx ()
+No symbol table info available.
+#139 0x000055be54bc986a in PyEval_EvalCodeEx ()
+No symbol table info available.
+#140 0x000055be54bd1a3c in PyEval_EvalFrameEx ()
+No symbol table info available.
+#141 0x000055be54bc986a in PyEval_EvalCodeEx ()
+No symbol table info available.
+#142 0x000055be54bd13ee in PyEval_EvalFrameEx ()
+No symbol table info available.
+#143 0x000055be54bc986a in PyEval_EvalCodeEx ()
+No symbol table info available.
+#144 0x000055be54bcefc1 in PyEval_EvalFrameEx ()
+No symbol table info available.
+#145 0x000055be54bc986a in PyEval_EvalCodeEx ()
+No symbol table info available.
+#146 0x000055be54bd13ee in PyEval_EvalFrameEx ()
+No symbol table info available.
+#147 0x000055be54bc986a in PyEval_EvalCodeEx ()
+No symbol table info available.
+#148 0x000055be54be5539 in ?? ()
+No symbol table info available.
+#149 0x000055be54bb533e in PyObject_Call ()
+No symbol table info available.
+#150 0x000055be54c26e70 in ?? ()
+No symbol table info available.
+#151 0x000055be54ba3581 in Py_Main ()
+No symbol table info available.
+#152 0x00007f47b0629b97 in __libc_start_main (main=0x55be54ba30e0 <main>, 
+    argc=5, argv=0x7ffea927d4c8, init=<optimized out>, fini=<optimized out>, 
+    rtld_fini=<optimized out>, stack_end=0x7ffea927d4b8)
+    at ../csu/libc-start.c:310
+        self = <optimized out>
+        __self = <optimized out>
+        result = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {0, 1503554011358801210, 
+                94275953635280, 140731736380608, 0, 0, 4637662795576880442, 
+                4696826938337635642}, mask_was_saved = 0}}, priv = {pad = {
+              0x0, 0x0, 0x7f47b0c10783 <_dl_init+259>, 0x7f47b0bfecb0}, 
+            data = {prev = 0x0, cleanup = 0x0, canceltype = -1329526909}}}
+        not_first_call = <optimized out>
+#153 0x000055be54ba2ffa in _start ()
+No symbol table info available.
+
+
+30	../sysdeps/unix/sysv/linux/waitpid.c: No existe el archivo o el directorio.
+Traceback (most recent call last):
+  File "<string>", line 26, in <module>
+ModuleNotFoundError: No module named 'Cython'
+Error al ejecutar código Python.
